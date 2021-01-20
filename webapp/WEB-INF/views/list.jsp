@@ -1,5 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-	pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"	pageEncoding="UTF-8"%>
 
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 
@@ -34,8 +33,9 @@
 			</tr>
 
 			<tr>
-				<td><a href="">[수정]</a></td>
-				<td><a href="">[삭제]</a></td>
+				<td><a href="/phonebook3/phone/uForm?id=${pVo.person_id }">[수정]</a></td>
+				<td><a href="/phonebook3/phone/delete/${pVo.person_id }">[삭제]</a></td>
+				<%-- <td><a href="/phonebook3/phone/delete?id=${pVo.person_id }">[삭제]</a></td> --%>
 			</tr>
 
 		</table>
